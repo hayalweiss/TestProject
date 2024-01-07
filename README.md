@@ -5,7 +5,7 @@ An application for exchanging currencies according to the daily exchange
 ## Table of Content
 
 The application has three pages:
-The first page name is home Contains an introduction.
+The first page name is 'home' Contains an introduction.
 The second page name is 'Counter Convert':Contains a conversion component between currencies and is calculated according to a selected quantity.
 The third page name is 'About':Contains all search results history
 In addition, there is a top menu that accompanies the entire project
