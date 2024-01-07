@@ -1,6 +1,6 @@
 ## introduction
  כ
-An application for exchanging currencies according to the daily exchange
+Responsive application for exchanging currencies according to the daily exchange
 
 ## Table of Content
 
