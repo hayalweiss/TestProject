@@ -1,12 +1,14 @@
 ## introduction
-
+ כ
 An application for exchanging currencies according to the daily exchange
 
 ## Table of Content
 
-The application has two pages:
-The first page name is 'Counter Convert':Contains a conversion component between currencies and is calculated according to a selected quantity.
-The second page name is 'About':Contains all search results history
+The application has three pages:
+The first page name is home Contains an introduction.
+The second page name is 'Counter Convert':Contains a conversion component between currencies and is calculated according to a selected quantity.
+The third page name is 'About':Contains all search results history
+In addition, there is a top menu that accompanies the entire project
 
 ##requirements
 
@@ -14,7 +16,7 @@ Showing currency converter and saving search history
 
 ##Structure and modules
 
-There are two components:abut,convert
+There are four components:abut,convert,home,nav-menu
 Classes for building the objects:RateHistory,Rate and more
 Service to save list object that include search result
 
