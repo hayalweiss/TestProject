@@ -1,0 +1,29 @@
+
+<div class="CMain">
+  <p-table [value]="listShow" [rowHover]="true" dataKey="num"
+           [rows]="5" [showCurrentPageReport]="true" [rowsPerPageOptions]="[5,25,50]"
+           [paginator]="true"
+           [filterDelay]="0" [lazy]="false"
+           currentPageReportTemplate="מציג {first} עד {last} מתוך {totalRecords} רשומות"
+           [globalFilterFields]="['num','option1.key','option1.value','option2.key','option2.value']">
+
+    <ng-template pTemplate="header">
+      <th [pSortableColumn]="'num'">Amount of currency<p-sortIcon [field]="'num'"></p-sortIcon></th>
+      <th [pSortableColumn]="'option1.key'">Currency1 Type<p-sortIcon [field]="'option1.key'"></p-sortIcon></th>
+      <th [pSortableColumn]="'option1.value'">Currency1 Value<p-sortIcon [field]="'option1.value'"></p-sortIcon></th>
+      <th [pSortableColumn]="'option2.key'">Currency2 Type<p-sortIcon [field]="'option2.key'"></p-sortIcon></th>
+      <th [pSortableColumn]="'option2.value'">Currency2 Value<p-sortIcon [field]="'option2.value'"></p-sortIcon></th>
+
+    </ng-template>
+
+    <ng-template pTemplate="body" let-rowData style="" let-expanded="expanded">
+      <tr>
+        <td style="cursor:pointer">{{rowData.num}}</td>
+        <td style="cursor:pointer">{{rowData.option1.key}}</td>
+        <td style="cursor:pointer">{{rowData.option1.value}}</td>
+        <td style="cursor:pointer">{{rowData.option2.key}}</td>
+        <td style="cursor:pointer">{{rowData.option2.value}}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>

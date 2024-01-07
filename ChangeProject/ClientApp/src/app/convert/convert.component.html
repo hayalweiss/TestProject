@@ -1,0 +1,41 @@
+<div class="container CMain">
+  <div class="row DvMain">
+    <div class="col-md-3 col-sm-12 Crtl">
+      <input type="number" [(ngModel)]="rateHistoryItem.num" class="cInput"
+             (change)="onNumChange()" min="0" />
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <span class="STitle">
+        From:
+      </span>
+      <p-autoComplete [(ngModel)]="rateHistoryItem.option1" [dropdown]="true" [suggestions]="suggestions" field="key"
+                      (completeMethod)="filter($event)" (onSelect)="onChange($event)"
+                      (onUnselect)="onChange($event)" appendTo="body">
+
+        <ng-template let-option pTemplate="item">
+          <div>{{ option.key }}</div>
+        </ng-template>
+
+      </p-autoComplete>
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <span class="STitle">
+        To:
+      </span>
+      <p-autoComplete [(ngModel)]="rateHistoryItem.option2" [dropdown]="true" [suggestions]="suggestions" field="key"
+                      (completeMethod)="filter($event)" (onSelect)="onChange($event)"
+                      (onUnselect)="onChange($event)" appendTo="body">
+
+        <ng-template let-option pTemplate="item">
+          <div>{{ option.key }}</div>
+        </ng-template>
+
+      </p-autoComplete>
+
+    </div>
+  </div>
+
+  <div class="DvCenter">
+    {{txtRes1}}
+  </div>
+</div>

@@ -1,0 +1,47 @@
+.DvCenter {
+  display: flex;
+  color: blue;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.DvMain {
+  justify-content: center;
+  padding-bottom: 2em;
+  display: flex;
+}
+
+.cInput {
+  height: 2em;
+  width: 10em;
+}
+
+.col-md-3 {
+  display: flex;
+}
+
+.Crtl {
+  /* direction: rtl !important;*/
+}
+
+.col-sm-12 {
+  padding: 10px
+}
+
+.STitle {
+  width: 3em;
+  text-align:left;
+}
+
+.col-md-3  {
+  justify-content: right !important;
+}
+
+
+
+
+@media screen and (max-width:1023px) and (min-width:400px ) {
+  .col-md-3 {
+    justify-content: normal !important;
+  }
+}
